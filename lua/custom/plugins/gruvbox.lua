@@ -4,7 +4,7 @@ return {
     config = true,
 
     init = function()
-      vim.cmd.colorscheme 'gruvbox'
+      --      vim.cmd.colorscheme 'gruvbox'
     end,
   },
 }
