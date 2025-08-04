@@ -1,4 +1,4 @@
--- [[ Basic Keymaps ]]
+--P P[[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
 -- Clear highlights on search when pressing <Esc> in normal mode
@@ -33,6 +33,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>j', '<cmd>bprevious<CR>', { desc = 'Move to previous buffer' })
 vim.keymap.set('n', '<leader>k', '<cmd>bnext<CR>', { desc = 'Move to next buffer' })
+vim.keymap.set('n', '<leader>c', '<cmd>bdelete<CR>', { desc = 'Delete current buffer' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
