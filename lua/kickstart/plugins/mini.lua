@@ -14,18 +14,23 @@ return {
       animate.setup {
         cursor = {
           timing = animate.gen_timing.linear { duration = 50, unit = 'total' },
+          path = animate.gen_path.line {
+            max_output_steps = 1000,
+          },
         },
         scroll = {
-          timing = animate.gen_timing.linear { duration = 50, unit = 'total' },
+          timing = animate.gen_timing.linear { duration = 100, unit = 'total' },
+          subscroll = animate.gen_subscroll.equal { max_output_steps = 120 },
         },
         resize = {
-          enable = false,
+          enable = true,
+          timing = animate.gen_timing.linear { duration = 200, unit = 'total' },
         },
         open = {
-          enable = false,
+          enable = true,
         },
         close = {
-          enable = false,
+          enable = true,
         },
       }
 
