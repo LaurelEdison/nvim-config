@@ -8,7 +8,7 @@ return {
       lint.linters_by_ft = {
         markdown = { 'markdownlint-cli2' },
         go = { 'golangcilint' },
-        json = { 'jsonlint' },
+        --json = { 'jsonlint' },
         dockerfile = { 'hadolint' },
       }
 
