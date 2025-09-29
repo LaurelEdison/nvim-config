@@ -5,7 +5,7 @@ return {
     config = true,
 
     init = function()
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      --vim.cmd.colorscheme 'catppuccin-mocha'
     end,
   },
 }
