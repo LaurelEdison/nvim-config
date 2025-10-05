@@ -10,29 +10,29 @@ return {
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
 
-      local animate = require 'mini.animate'
-      animate.setup {
-        cursor = {
-          timing = animate.gen_timing.linear { duration = 50, unit = 'total' },
-          path = animate.gen_path.line {
-            max_output_steps = 1000,
-          },
-        },
-        scroll = {
-          timing = animate.gen_timing.linear { duration = 100, unit = 'total' },
-          subscroll = animate.gen_subscroll.equal { max_output_steps = 120 },
-        },
-        resize = {
-          enable = true,
-          timing = animate.gen_timing.linear { duration = 200, unit = 'total' },
-        },
-        open = {
-          enable = true,
-        },
-        close = {
-          enable = true,
-        },
-      }
+      -- local animate = require 'mini.animate'
+      -- animate.setup {
+      --   cursor = {
+      --     timing = animate.gen_timing.linear { duration = 50, unit = 'total' },
+      --     path = animate.gen_path.line {
+      --       max_output_steps = 1000,
+      --     },
+      --   },
+      --   scroll = {
+      --     timing = animate.gen_timing.linear { duration = 100, unit = 'total' },
+      --     subscroll = animate.gen_subscroll.equal { max_output_steps = 120 },
+      --   },
+      --   resize = {
+      --     enable = true,
+      --     timing = animate.gen_timing.linear { duration = 200, unit = 'total' },
+      --   },
+      --   open = {
+      --     enable = true,
+      --   },
+      --   close = {
+      --     enable = true,
+      --   },
+      -- }
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
